@@ -6,10 +6,38 @@ body{
 }
 
 main {
-    width: 800px;
-    height: 900px;
+    width: 500px;
+    height: 800px;
     margin: 2% 30%;
     background-color: azure;
+}
+aside{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    background-color: white;
+    height: 300px;
+    width: 210px;
+    font-size: 20px;
+}
+div h3{
+    text-align: center;
+}
+.commande{text-align: center;}
+.form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: none;
+
+}
+.form div{
+    display: flex;
+    border: none;
+}
+img{
+    width: 105px;
+    height: 80px;
 }
 #tetris {
     position: relative;
@@ -23,6 +51,34 @@ div div{
     box-sizing: border-box;
     border: 1px solid black;
 }
-.blocked{
-    background-color: chartreuse;
+.cyan {
+    background-color: cyan;
+}
+.yellow{
+    background-color: yellow;
+}
+.purple{
+    background-color: purple;
+}
+.orange{
+    background-color: orange;
+}
+.blue{
+    background-color: blue;
+}
+.red{
+    background-color: red;
+}
+.green{
+    background-color: green;
+}
+
+.removed{
+    background-color: grey;
+    animation: remove .30s linear;
+}
+@keyframes remove {
+    to{
+        transform: scale(0);
+    }
 }
